@@ -36,10 +36,15 @@ img {
   margin: 0;
 }
 
+.menu__item {
+  cursor: pointer;
+}
+
 .header__promo {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 0 5vw;
 }
 
 .header__about {
