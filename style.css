@@ -92,3 +92,46 @@ img {
   gap: 30px;
   filter: drop-shadow(0px 20px 40px rgba(255, 148, 1, 0.2));
 }
+
+.header__food-pic {
+  align-self: flex-start;
+}
+
+@media (max-width:1600px){
+  .header__nav {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 920px) {
+  .header__food-pic {
+    display: none;
+  }
+  .header__about {
+    align-items: center;
+  }
+  .header__about p,
+  .header__about h2 {
+    text-align: center;
+  }
+  .header__promo {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .header__nav-food-pic {
+    display: none;
+  }
+  .header__nav {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    margin: 0 0 30px 0;
+  }
+
+  .header__tagline {
+    font: 600 80px/94px "Fredoka", sans-serif;
+  }
+
+}
