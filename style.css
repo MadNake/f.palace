@@ -86,6 +86,10 @@ img {
   margin: 0 0 60px;
 }
 
+.recipes__block-tagline {
+  font: 500 46px/60px  "Fredoka", sans-serif;
+}
+
 .block-text{
   font: 400 20px/32px "Fredoka", sans-serif;
   margin: 0 0 45px 0;
@@ -100,6 +104,14 @@ img {
   font: 600 24px/30px  "Fredoka", sans-serif;
 }
 
+.recipes .cart-items__tagline {
+  font: 400 20px/60px  "Fredoka", sans-serif;
+}
+
+.recipes__button {
+  margin-top: 7vh;
+}
+
 
 .button {
   font: 400 20px/30px "Fredoka", sans-serif;
@@ -112,6 +124,15 @@ img {
   text-align: center;
   filter: drop-shadow(0px 20px 40px rgba(255, 148, 1, 0.2));
   cursor: pointer;
+}
+
+.add__button {
+  filter: none;
+  background-color: rgba(196, 196, 196, 0.26);
+  border-radius: 15px;
+  color: #696969;
+  font: 400 10px/10px "Fredoka", sans-serif;
+  text-transform: uppercase;
 }
 
 .header__button {
@@ -152,6 +173,62 @@ img {
   align-items: center;
 }
 
+.features-conteiner {
+  background: url("img/features__food-left.png") top left no-repeat, url("img/features__food-right.png") top right no-repeat;
+}
+
+.recipes__content-list {
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  margin: 0 5vw;
+  max-width: 100%;
+}
+
+.recipes__cart-items {
+  padding: 12px 12px 30px 12px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  filter: drop-shadow(0px 20px 40px rgba(255, 148, 1, 0.2));
+  align-items: flex-start;
+
+}
+
+.recipes__cart-items img {
+  filter: none;
+}
+
+.cart-items__tagline {
+  margin: 0;
+}
+
+.recipes__grade {
+  font: 400 16px/20px "Fredoka", sans-serif;
+  color: #818181;
+  position: relative;
+  padding-left: 15px;
+  margin: 0;
+  max-width: max-content;
+}
+
+.recipes__grade::before {
+  content: "";
+  background-image: url("img/star.svg");
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  left: 0;
+  top: 5px;
+}
+
+.recipes__cost {
+  color: #FF9401;
+  font: 400 18px/22px "Fredoka", italic;
+  font-style: italic;
+  margin: 0;
+  max-width: max-content;
+}
+
 @media (max-width:1600px){
   .header__nav {
     justify-content: space-around;
@@ -173,6 +250,9 @@ img {
   .block-content {
     justify-content: center;
   }
+  .features-conteiner {
+    background: none;
+  }
 
 }
 
@@ -185,6 +265,7 @@ img {
     top: 0;
     background-color: #fff;
     margin: 0 0 30px 0;
+    z-index: 1;
   }
 
   .header__block-tagline {
