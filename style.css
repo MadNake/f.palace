@@ -105,11 +105,7 @@ img {
 }
 
 .recipes .cart-items__tagline {
-  font: 400 20px/60px  "Fredoka", sans-serif;
-}
-
-.recipes__button {
-  margin-top: 7vh;
+  font: 400 20px/26px  "Fredoka", sans-serif;
 }
 
 
@@ -185,14 +181,32 @@ img {
   max-width: 100%;
 }
 
+.recipes__carts-list {
+  margin-bottom: 7vh;
+}
+
 .recipes__cart-items {
   padding: 12px 12px 30px 12px;
   background-color: #ffffff;
   border-radius: 10px;
   filter: drop-shadow(0px 20px 40px rgba(255, 148, 1, 0.2));
-  align-items: flex-start;
-
+  display: inline-grid;
+    grid-template-columns: 1fr auto ;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header header";
+    align-items: baseline;
+    height: 33vh;
 }
+
+.cart-items__x:nth-child(3),
+.cart-items__x:nth-child(5) {
+  justify-self: end;
+}
+
+.cart-items__x:first-child {
+  grid-area: header;
+}
+
 
 .recipes__cart-items img {
   filter: none;
@@ -228,6 +242,8 @@ img {
   margin: 0;
   max-width: max-content;
 }
+
+
 
 @media (max-width:1600px){
   .header__nav {
