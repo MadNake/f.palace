@@ -90,9 +90,59 @@ img {
   font: 500 46px/60px  "Fredoka", sans-serif;
 }
 
+.share__block-tagline {
+  font: 600 48px/60px  "Fredoka", sans-serif;
+}
+
+.reviews__block-tagline {
+  font: 600 48px/60px  "Fredoka", sans-serif;
+}
+
+.main-footer__block-tagline {
+  font: 500 20px/30px  "Fredoka", sans-serif;
+}
+
 .block-text{
   font: 400 20px/32px "Fredoka", sans-serif;
   margin: 0 0 45px 0;
+}
+
+.reviews__block-text {
+  font: 400 18px/28px "Fredoka" , sans-serif;
+  font-style: italic;
+}
+
+.main-footer__block-text {
+  font: 400 18px/30px "Fredoka" , sans-serif;
+  text-decoration: none;
+}
+
+.main-footer__text_c1 {
+  color: #3F3232;
+}
+
+.main-footer__text_c2 {
+  color: #2E2E2E;
+}
+
+.main-footer__text_c3 {
+  color: #6A5C5C;
+}
+
+.main-footer__text_underline {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.main-footer__text_underline::after {
+  content: "";
+  width: 20px;
+  height: 0px;
+  border: 0.1px solid #000000;
+  border-color: #000000;
+  position: absolute;
+  bottom: -3px;
+  left: -10px;
 }
 
 .cart-items__text {
@@ -243,6 +293,60 @@ img {
   max-width: max-content;
 }
 
+.app-link img {
+  max-width: 150px;
+  max-height: 50px;
+  margin-right: 15px;
+}
+
+.signature p {
+  margin: 0;
+}
+
+.signature__position {
+  font: 400 14px/22px "Fredoka", sans-serif;
+  color: #675959;
+}
+
+.reviews__buttons {
+  position: relative;
+}
+
+.reviews__button {
+  border: none;
+  background-color: inherit;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  right: 40px;
+}
+
+.reviews__button_active {
+right: 0;
+bottom: -4px;
+}
+
+.reviews__content-list .content-list__item:last-child {
+  width: 100%;
+}
+
+.sinature-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.share__conteiner {
+  background: url("img/share_left.png") top left no-repeat, url("img/share_right.png") top right no-repeat;
+}
+
+.main-footer__conteiner {
+  min-height: 25vh;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items:center;
+}
 
 
 @media (max-width:1600px){
@@ -253,7 +357,9 @@ img {
 
 @media (max-width: 920px) {
   .header__food-pic,
-  .about-us__food-pic {
+  .about-us__food-pic,
+  .share__pic,
+  .reviews__food-pic {
     display: none;
   }
   .content-list {
