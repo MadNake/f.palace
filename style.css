@@ -136,13 +136,13 @@ img {
 
 .main-footer__text_underline::after {
   content: "";
-  width: 20px;
+  width: 100%;
   height: 0px;
   border: 0.1px solid #000000;
   border-color: #000000;
   position: absolute;
-  bottom: -3px;
-  left: -10px;
+  bottom: 5px;
+  left: 0px;
 }
 
 .cart-items__text {
@@ -372,7 +372,8 @@ bottom: -4px;
   .block-content {
     justify-content: center;
   }
-  .features-conteiner {
+  .features-conteiner,
+  .share__conteiner {
     background: none;
   }
 
