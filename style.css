@@ -346,6 +346,9 @@ bottom: -4px;
   flex-direction: row;
   justify-content: space-around;
   align-items:center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 0 5vw;
 }
 
 
@@ -376,6 +379,17 @@ bottom: -4px;
   .share__conteiner {
     background: none;
   }
+  .main-footer__nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+}
+
+@media (max-width: 760px) {
+
 
 }
 
