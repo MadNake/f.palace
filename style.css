@@ -20,7 +20,7 @@ img {
 }
 
 .container {
-  max-width: 1600px;
+  padding: 0 3vw;
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
