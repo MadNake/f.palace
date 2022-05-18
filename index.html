@@ -12,9 +12,9 @@
   </head>
   <body>
     <header class="header">
-      <div class="conteiner">
+      <div class="container">
         <nav class="header__nav">
-          <a href="#" class="header__logo logo">
+          <a href="#" class="logo">
             <span>
               <svg width="110" height="30">
                 <use xlink:href="sprite.svg#logo"></use>
@@ -22,7 +22,7 @@
             </span>
           </a>
           <div class="img-cover"><img class="header__nav-food-pic" src="img/nav__food.png"  alt="food"></div>
-          <ul class="header__menu menu">
+          <ul class="menu">
 
             <li class="menu__item">
               <a href="#">
@@ -51,195 +51,174 @@
           </ul>
         </nav>
 
-        <div class="header__block-content block-content">
+        <div class="block-content">
           <h1 class="visually-hidden">restaurant promo</h1>
 
-            <ul class="header__content-list content-list">
-              <li class="content-list__item">
-                <h3 class="header__block-name block-name">_ Restaurant</h3>
-              </li>
+          <div class="content-list">
+            <h3 class="block-name">_ Restaurant</h3>
               <!--<img class="header__tagline" src="img/tagline.png" alt="tagline" width="532" height="186">-->
-              <li class="content-list__item">
-                <h2 class="header__block-tagline block-tagline">Good food<br>Good mood</h2>
-              </li>
-              <li class="content-list__item">
-                <p class="header__block-text block-text">The food palace is an neighborhood restaurent serving seasonal global cuisine driven by the faire.</p>
-              </li>
-              <li class="content-list__item">
-                <button class="header__button button" type="button" name="button">Explore Food Menu</button>
-              </li>
-              <li class="content-list__item">
-                <ul class="header__social-list social-list">
-                  <li class="social-list__item">
+            <h2 class="header__block-tagline block-tagline">Good food<br>Good mood</h2>
+            <p class="block-text">The food palace is an neighborhood restaurent serving seasonal global cuisine driven by the faire.</p>
+            <button class="header__button button" type="button" name="button">Explore Food Menu</button>
+            <ul class="social-list">
+                <li class="social-list__item">
                     <a href="#">
                       <svg width="35" height="35">
                         <use xlink:href="sprite.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-list__item">
+                <li class="social-list__item">
                     <a href="#">
                       <svg width="35" height="35">
                         <use xlink:href="sprite.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-list__item">
+                <li class="social-list__item">
                     <a href="#">
                       <svg width="35" height="35">
                         <use xlink:href="sprite.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
-                </ul>
-              </li>
             </ul>
-          <div class="img-cover header__food-pic"><img class="header__food-pic" src="img/header__food.png" alt="food" ></div>
+          </div>
+          <div class="img-cover header__food-pic">
+              <img class="header__food-pic" src="img/header__food.png" alt="food" >
+            </div>
         </div>
       </div>
     </header>
     <main>
       <section class="about-us">
-        <div class="conteiner conteiner_gradient">
-          <div class="about-us__block-content block-content">
+        <div class="container container_gradient">
+          <div class="block-content">
             <div class="img-cover about-us__food-pic">
               <img src="img/about-us__food1.png" alt="food">
             </div>
-              <ul class="about-us__content-list content-list">
-                <li class="content-list__item"><h3 class="about-us__block-name block-name">About us</h3></li>
-                <li class="content-list__item"><h2 class="about-us__block-tagline block-tagline">Simple Way of Eating Delicious</h2></li>
-                <li class="content-list__item"><p class="about-us__block-text block-text">Keep healthy food readily available. When you get hungry, you’re more likely to eat the first thing you see on the counter or in the</p></li>
-                <li class="content-list__item"><button class="about-us__button button" type="button" name="button">Explore our story</button></li>
-              </ul>
+            <div class="about-us__content-list content-list">
+              <h3 class="block-name">About us</h3>
+              <h2 class="about-us__block-tagline block-tagline">Simple Way of Eating Delicious</h2>
+              <p class="block-text">Keep healthy food readily available. When you get hungry, you’re more likely to eat the first thing you see on the counter or in the</p>
+              <button class="button" type="button" name="button">Explore our story</button>
+            </div>
           </div>
         </div>
       </section>
       <section class="features">
-        <div class="conteiner features-conteiner">
-          <ul class="features__content-list content-list">
-            <li class="content-list__item">
-              <h3 class="features__block-name block-name">Features</h3>
-            </li>
-            <li class="content-list__item">
-              <h2 class="features__block-tagline block-tagline">Our Awesome Services</h2>
-            </li>
-            <li class="content-list__item">
+        <div class="container features-container">
+          <div class="features__content-list content-list">
+              <h3 class="block-name">Features</h3>
+              <h2 class="features__block-tagline tagline_b1 block-tagline">Our Awesome Services</h2>
               <ul class="carts-list">
                 <li class="carts-list__cart-items">
-                  <ul class="cart-items features__cart-items">
-                    <li class="cart-items__x"><img class="cart-items__icon" src="img/item-list__icon-food.png" alt=""> </li>
-                    <li class="cart-items__x"><h3 class="cart-items__tagline block-tagline">Quality Food</h3> </li>
-                    <li class="cart-items__x"><p class="cart-items__text block-text">Keep healthy food readily available. When you get hungry, you’re more likely to </p> </li>
-                  </ul>
+                  <div class="cart-items">
+                    <img width="101" height="129" src="img/item-list__icon-food.png" alt="">
+                    <h3 class="cart-items__tagline block-tagline">Quality Food</h3>
+                    <p class="cart-items__text text_s1 block-text">Keep healthy food readily available. When you get hungry, you’re more likely to </p>
+                  </div>
                 </li>
                 <li class="carts-list__cart-items">
-                  <ul class="cart-items features__cart-items">
-                    <li class="cart-items__x"><img class="cart-items__icon" src="img/item-list__icon-taste.png" alt=""> </li>
-                    <li class="cart-items__x"><h3 class="cart-items__tagline block-tagline">Super Taste</h3> </li>
-                    <li class="cart-items__x"><p class="cart-items__text block-text">Keep healthy food readily available. When you get hungry, you’re more likely to </p> </li>
-                  </ul>
+                  <div class="cart-items">
+                    <img width="101" height="129" src="img/item-list__icon-taste.png" alt="">
+                    <h3 class="cart-items__tagline block-tagline">Super Taste</h3>
+                    <p class="cart-items__text text_s1 block-text">Keep healthy food readily available. When you get hungry, you’re more likely to </p>
+                  </div>
                 </li>
                 <li class="carts-list__cart-items">
-                  <ul class="cart-items features__cart-items">
-                    <li class="cart-items__x"><img class="cart-items__icon" src="img/item-list__icon-delivery.png" alt=""> </li>
-                    <li class="cart-items__x"><h3 class="cart-items__tagline block-tagline">Fast Delivery</h3> </li>
-                    <li class="cart-items__x"><p class="cart-items__text block-text">Keep healthy food readily available. When you get hungry, you’re more likely to </p> </li>
-                  </ul>
+                  <div class="cart-items">
+                    <img width="101" height="129" src="img/item-list__icon-delivery.png" alt="">
+                    <h3 class="cart-items__tagline block-tagline">Fast Delivery</h3>
+                    <p class="cart-items__text text_s1 block-text">Keep healthy food readily available. When you get hungry, you’re more likely to </p>
+                  </div>
                 </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="recipes">
-        <div class="conteiner conteiner_gradient">
-          <ul class="recipes__content-list content-list">
-            <li class="content-list__item">
-              <h3 class="recipes__block-name block-name">Recipes</h3>
-            </li>
-            <li class="content-list__item">
-              <h2 class="recipes__block-tagline block-tagline">Most Popular Items</h2>
-            </li>
-            <li class="content-list__item">
-              <ul class="carts-list recipes__carts-list">
-                <li class="carts-list__cart-items">
-                  <ul class="cart-items recipes__cart-items">
-                    <li class="cart-items__x"><img class="cart-items__icon" src="img/recipes__dish1.png" alt=""> </li>
-                    <li class="cart-items__x"><h3 class="cart-items__tagline block-tagline">Flame-boiled dish</h3> </li>
-                    <li class="cart-items__x"><p class="recipes__grade">8.5</p></li>
-                    <li class="cart-items__x"><button class="add__button button" type="button" name="button">add to cart</button> </li>
-                    <li class="cart-items__x"><p class="recipes__cost">$ 19.99</p></li>
-                  </ul>
-                </li>
-                <li class="carts-list__cart-items">
-                  <ul class="cart-items recipes__cart-items">
-                    <li class="cart-items__x"><img class="cart-items__icon" src="img/recipes__dish2.png" alt=""> </li>
-                    <li class="cart-items__x"><h3 class="cart-items__tagline block-tagline">Peach Melba dish</h3> </li>
-                    <li class="cart-items__x"><p class="recipes__grade">9.5</p></li>
-                    <li class="cart-items__x"><button class="add__button button" type="button" name="button">add to cart</button></li>
-                    <li class="cart-items__x"><p class="recipes__cost">$ 20.99</p></li>
-                  </ul>
-                </li>
-                <li class="carts-list__cart-items">
-                  <ul class="cart-items recipes__cart-items">
-                    <li class="cart-items__x"><img class="cart-items__icon" src="img/recipes__dish3.png" alt=""> </li>
-                    <li class="cart-items__x"><h3 class="cart-items__tagline block-tagline">Delmonico Steak dish</h3> </li>
-                    <li class="cart-items__x"><p class="recipes__grade">8.0</p></li>
-                    <li class="cart-items__x"><button class="add__button button" type="button" name="button">add to cart</button></li>
-                    <li class="cart-items__x"><p class="recipes__cost">$ 18.99</p></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="content-list__item">
-              <button class="recipes__button button" type="button" name="button">See more recipes</button>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="share">
-        <div class="conteiner share__conteiner">
-          <div class="share__block-content block-content">
-            <div class="img-cover share__pic">
-              <img src="img/share.png" alt="food">
-            </div>
-              <ul class="share__content-list content-list">
-                <li class="content-list__item"><h3 class="share__block-name block-name">Take away</h3></li>
-                <li class="content-list__item"><h2 class="share__block-tagline block-tagline">Simple Way To Order Your Food</h2></li>
-                <li class="content-list__item"><p class="share__block-text block-text">Keep healthy food readily available. When you get hungry, you’re more likely to eat the first thing you see on the counter or in the cupboard.</p></li>
-                <li class="content-list__item"><a class="img-cover app-link" href="#"><img src="img/google-play.png" alt=""></a> <a class="img-cover app-link" href="#"><img src="img/app-store.png" alt=""></a> </li>
               </ul>
           </div>
         </div>
       </section>
-      <section class="reviews">
-        <div class="conteiner">
-          <div class="reviews__block-content block-content">
-              <ul class="reviews__content-list content-list">
-                <li class="content-list__item"><h3 class="reviews__block-name block-name">About us</h3></li>
-                <li class="content-list__item"><h2 class="reviews__block-tagline block-tagline">That’s what our Client Says</h2></li>
-                <li class="content-list__item"><p class="reviews__block-text block-text">“Food palace is an awesome place. Food is everything we are. It’s an extension of nationalist feeling, ethnic feeling, your personal history, your province”</p></li>
-                <li class="content-list__item">
-                  <div class="sinature-wrapper">
-                    <div class="signature">
-                      <p class="signature__name block-text">Jessica Parker</p>
-                      <p class="signature__position block-text">Product Designer @ Kitty</p>
-                    </div>
-                    <div class="buttons reviews__buttons">
-                      <button class="button reviews__button" type="button" name="button">
-                        <svg width="14" height="8" viewBox="0 0 14 8">
-                          <use xlink:href="sprite.svg#vector-left"></use>
-                        </svg>
-                      </button>
-                      <button class="button reviews__button reviews__button_active " type="button" name="button">
-                        <svg width="31" height="17" viewBox="0 0 31 17">
-                          <use xlink:href="sprite.svg#vector-right"></use>
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
+      <section class="recipes">
+        <div class="container container_gradient">
+          <div class="recipes__content-list content-list">
+            <h3 class="block-name">Recipes</h3>
+            <h2 class="recipes__block-tagline tagline_b1 tagline_b1 block-tagline">Most Popular Items</h2>
+            <ul class="carts-list recipes__carts-list">
+              <li class="carts-list__cart-items">
+                  <ul class="cart-items recipes__cart-items">
+                    <li class="cart-items__x"><img src="img/recipes__dish1.png" alt=""> </li>
+                    <li class="cart-items__x"><h3 class="cart-items__tagline block-tagline">Flame-boiled dish</h3> </li>
+                    <li class="cart-items__x"><p class="recipes__grade">8.5</p></li>
+                    <li class="cart-items__x"><button class="add-button button" type="button" name="button">add to cart</button> </li>
+                    <li class="cart-items__x"><p class="recipes__cost">$ 19.99</p></li>
+                  </ul>
+              </li>
+              <li class="carts-list__cart-items">
+                  <ul class="cart-items recipes__cart-items">
+                    <li class="cart-items__x"><img src="img/recipes__dish2.png" alt=""> </li>
+                    <li class="cart-items__x"><h3 class="cart-items__tagline block-tagline">Peach Melba dish</h3> </li>
+                    <li class="cart-items__x"><p class="recipes__grade">9.5</p></li>
+                    <li class="cart-items__x"><button class="add-button button" type="button" name="button">add to cart</button></li>
+                    <li class="cart-items__x"><p class="recipes__cost">$ 20.99</p></li>
+                  </ul>
                 </li>
-              </ul>
+              <li class="carts-list__cart-items">
+                  <ul class="cart-items recipes__cart-items">
+                    <li class="cart-items__x"><img src="img/recipes__dish3.png" alt=""> </li>
+                    <li class="cart-items__x"><h3 class="cart-items__tagline block-tagline">Delmonico Steak dish</h3> </li>
+                    <li class="cart-items__x"><p class="recipes__grade">8.0</p></li>
+                    <li class="cart-items__x"><button class="add-button button" type="button" name="button">add to cart</button></li>
+                    <li class="cart-items__x"><p class="recipes__cost">$ 18.99</p></li>
+                  </ul>
+                </li>
+            </ul>
+            <button class="button" type="button" name="button">See more recipes</button>
+          </div>
+        </div>
+      </section>
+      <section class="share">
+        <div class="container share__container">
+          <div class="block-content">
+            <div class="img-cover share__pic">
+              <img src="img/share.png" alt="food">
+            </div>
+            <div class="content-list">
+              <h3 class="block-name">Take away</h3>
+              <h2 class="tagline_b1 block-tagline">Simple Way To Order Your Food</h2>
+              <p class="block-text">Keep healthy food readily available. When you get hungry, you’re more likely to eat the first thing you see on the counter or in the cupboard.</p>
+              <div class="social-img-wrapper">
+                  <a class="img-cover app-link" href="#"><img src="img/google-play.png" alt=""></a>
+                  <a class="img-cover app-link" href="#"><img src="img/app-store.png" alt=""></a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="container">
+          <div class="block-content">
+              <div class="content-list">
+                <h3 class="reviews__block-name block-name">About us</h3>
+                <h2 class="tagline_b1 block-tagline">That’s what our Client Says</h2>
+                <p class="reviews__block-text text_s1 block-text">“Food palace is an awesome place. Food is everything we are. It’s an extension of nationalist feeling, ethnic feeling, your personal history, your province”</p>
+                <div class="sinature-wrapper">
+                  <div class="signature">
+                    <p class="signature__name block-text">Jessica Parker</p>
+                    <p class="signature__position block-text">Product Designer @ Kitty</p>
+                  </div>
+                  <div class="buttons reviews__buttons">
+                    <button class="button reviews__button" type="button" name="button">
+                      <svg width="14" height="8" viewBox="0 0 14 8">
+                        <use xlink:href="sprite.svg#vector-left"></use>
+                      </svg>
+                    </button>
+                    <button class="button reviews__button reviews__button_active " type="button" name="button">
+                      <svg width="31" height="17" viewBox="0 0 31 17">
+                        <use xlink:href="sprite.svg#vector-right"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
               <div class="img-cover reviews__food-pic">
                 <img src="img/reviews__food-pic.png" alt="food">
               </div>
@@ -249,53 +228,53 @@
     </main>
     <footer class="main-footer">
       <nav class="main-footer__nav">
-        <div class="conteiner_gradient conteiner main-footer__conteiner">
+        <div class="container_gradient container main-footer__container">
             <h2 class="visually-hidden">Контакты</h2>
-            <div class="main-footer__contacts main-footer__nav-list">
+            <div class="main-footer__nav-list">
               <a href="#">
                 <svg width="130" height="34">
                   <use xlink:href="sprite.svg#logo"></use>
                 </svg>
               </a>
-              <ul class="main-footer__contacts-list">
-                <li><a class="main-footer__block-text main-footer__text_c1" href="#">info@food_palace.com</a></li>
-                <li><a class="main-footer__block-text main-footer__text_c1" href="#">www.Food_palace.com</a></li>
+              <ul class="main-footer__link-wrapper">
+                <li><a class="main-footer__block-text text_s1 color_c1" href="#">info@food_palace.com</a></li>
+                <li><a class="main-footer__block-text color_c1" href="#">www.Food_palace.com</a></li>
               </ul>
             </div>
 
             <div class="main-footer__company">
-              <h3 class="main-footer__block-tagline main-footer__text_c2">Our menu</h3>
-              <ul class="main-footer__company-nav-list main-footer__nav-list">
-                <li><a class="main-footer__block-text main-footer__text_c3" href="#">Breakfast</a></li>
-                <li><a class="main-footer__block-text main-footer__text_c3" href="#">Lunce</a></li>
-                <li><a class="main-footer__block-text main-footer__text_c3" href="#">Dinner</a></li>
+              <h3 class="main-footer__block-tagline color_c2">Our menu</h3>
+              <ul class="main-footer__nav-list">
+                <li><a class="main-footer__block-text color_c3" href="#">Breakfast</a></li>
+                <li><a class="main-footer__block-text color_c3" href="#">Lunce</a></li>
+                <li><a class="main-footer__block-text color_c3" href="#">Dinner</a></li>
               </ul>
             </div>
 
             <div class="main-footer__buyers">
-              <h3 class="main-footer__block-tagline main-footer__text_c2">Information</h3>
-                <ul class="main-footer__buyers-nav-list main-footer__nav-list">
-                  <li><a class="main-footer__block-text main-footer__text_c3" href="#">About us</a></li>
-                  <li><a class="main-footer__block-text main-footer__text_c3" href="#">Testimonial</a></li>
-                  <li><a class="main-footer__block-text main-footer__text_c3" href="#">Event</a></li>
+              <h3 class="main-footer__block-tagline color_c2">Information</h3>
+                <ul class="main-footer__nav-list">
+                  <li><a class="main-footer__block-text color_c3" href="#">About us</a></li>
+                  <li><a class="main-footer__block-text color_c3" href="#">Testimonial</a></li>
+                  <li><a class="main-footer__block-text color_c3" href="#">Event</a></li>
                 </ul>
             </div>
 
             <div class="main-footer__buyers">
-              <h3 class="main-footer__block-tagline main-footer__text_c2">Useful links</h3>
-              <ul class="main-footer__buyers-nav-list main-footer__nav-list">
-                <li><a class="main-footer__block-text main-footer__text_c3" href="#">Services</a></li>
-                <li><a class="main-footer__block-text main-footer__text_c3" href="#">Support</a></li>
-                <li><a class="main-footer__block-text main-footer__text_c3" href="#">Conditions</a></li>
+              <h3 class="main-footer__block-tagline color_c2">Useful links</h3>
+              <ul class="main-footer__nav-list">
+                <li><a class="main-footer__block-text color_c3" href="#">Services</a></li>
+                <li><a class="main-footer__block-text color_c3" href="#">Support</a></li>
+                <li><a class="main-footer__block-text color_c3" href="#">Conditions</a></li>
               </ul>
             </div>
 
             <div class="main-footer__paymant">
-              <h3 class="main-footer__block-tagline main-footer__text_c2">Social Handles</h3>
-              <ul class="main-footer__paymant-nav-list main-footer__nav-list">
-                <li><a class="main-footer__block-text main-footer__text_c2 main-footer__text_underline" href="#">Facebook</a></li>
-                <li><a class="main-footer__block-text main-footer__text_c2 main-footer__text_underline" href="#">Twitter</a></li>
-                <li><a class="main-footer__block-text main-footer__text_c2 main-footer__text_underline" href="#">Youtube</a></li>
+              <h3 class="main-footer__block-tagline color_c2">Social Handles</h3>
+              <ul class="main-footer__nav-list">
+                <li><a class="main-footer__block-text color_c2 main-footer__text_underline" href="#">Facebook</a></li>
+                <li><a class="main-footer__block-text color_c2 main-footer__text_underline" href="#">Twitter</a></li>
+                <li><a class="main-footer__block-text color_c2 main-footer__text_underline" href="#">Youtube</a></li>
               </ul>
             </div>
         </div>

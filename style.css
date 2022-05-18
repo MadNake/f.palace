@@ -1,12 +1,12 @@
 .visually-hidden {
- position: absolute;
- width: 1px;
- height: 1px;
- margin: -1px;
- border: 0;
- padding: 0;
- clip: rect(0 0 0 0);
- overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 ul {
@@ -19,7 +19,7 @@ img {
   filter: drop-shadow(0px 20px 40px rgba(255, 148, 1, 0.2));
 }
 
-.conteiner {
+.container {
   max-width: 1600px;
   margin: 0 auto;
   min-height: 100vh;
@@ -28,7 +28,7 @@ img {
   justify-content: center;
 }
 
-.conteiner_gradient {
+.container_gradient {
   background: linear-gradient(180deg, rgba(255, 148, 1, 0.05) 0%, rgba(255, 237, 211, 0) 100%);
 }
 
@@ -71,10 +71,17 @@ img {
   margin: 0 0 15px 0;
 }
 
+.tagline_b1 {
+  font: 500 46px/60px  "Fredoka", sans-serif;
+}
 
 .block-tagline {
   font: 600 96px/108px  "Fredoka", sans-serif;
   margin: 0 0 15px 0;
+}
+
+.tagline_b1 {
+  font: 500 46px/60px  "Fredoka", sans-serif;
 }
 
 .about-us__block-tagline {
@@ -82,21 +89,23 @@ img {
 }
 
 .features__block-tagline {
-  font: 500 46px/60px  "Fredoka", sans-serif;
   margin: 0 0 60px;
 }
 
 .recipes__block-tagline {
-  font: 500 46px/60px  "Fredoka", sans-serif;
+  position: relative;
 }
 
-.share__block-tagline {
-  font: 600 48px/60px  "Fredoka", sans-serif;
+.recipes__block-tagline:after {
+  position: absolute;
+  content: "";
+  top: -36px;
+  right: -137px;
+  width: 86px;
+  height: 95px;
+  background: url("img/recipes_after.png") no-repeat;
 }
 
-.reviews__block-tagline {
-  font: 600 48px/60px  "Fredoka", sans-serif;
-}
 
 .main-footer__block-tagline {
   font: 500 20px/30px  "Fredoka", sans-serif;
@@ -107,25 +116,27 @@ img {
   margin: 0 0 45px 0;
 }
 
-.reviews__block-text {
+.text_s1 {
   font: 400 18px/28px "Fredoka" , sans-serif;
+}
+
+.reviews__block-text {
   font-style: italic;
 }
 
 .main-footer__block-text {
-  font: 400 18px/30px "Fredoka" , sans-serif;
   text-decoration: none;
 }
 
-.main-footer__text_c1 {
+.color_c1 {
   color: #3F3232;
 }
 
-.main-footer__text_c2 {
+.color_c2 {
   color: #2E2E2E;
 }
 
-.main-footer__text_c3 {
+.color_c3 {
   color: #6A5C5C;
 }
 
@@ -138,15 +149,14 @@ img {
   content: "";
   width: 100%;
   height: 0px;
-  border: 0.1px solid #000000;
+  border: 1px solid #000000;
   border-color: #000000;
   position: absolute;
-  bottom: 5px;
+  bottom: 9px;
   left: 0px;
 }
 
 .cart-items__text {
-  font: 400 18px/28px "Fredoka", sans-serif;
   text-align: center;
 }
 
@@ -172,7 +182,7 @@ img {
   cursor: pointer;
 }
 
-.add__button {
+.add-button {
   filter: none;
   background-color: rgba(196, 196, 196, 0.26);
   border-radius: 15px;
@@ -219,7 +229,7 @@ img {
   align-items: center;
 }
 
-.features-conteiner {
+.features-container {
   background: url("img/features__food-left.png") top left no-repeat, url("img/features__food-right.png") top right no-repeat;
 }
 
@@ -241,11 +251,11 @@ img {
   border-radius: 10px;
   filter: drop-shadow(0px 20px 40px rgba(255, 148, 1, 0.2));
   display: inline-grid;
-    grid-template-columns: 1fr auto ;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "header header";
-    align-items: baseline;
-    height: 33vh;
+  grid-template-columns: 1fr auto ;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header header";
+  align-items: baseline;
+  height: 33vh;
 }
 
 .cart-items__x:nth-child(3),
@@ -324,24 +334,22 @@ img {
 }
 
 .reviews__button_active {
-right: 0;
-bottom: -4px;
+  right: 0;
+  bottom: -4px;
 }
 
-.reviews__content-list .content-list__item:last-child {
-  width: 100%;
-}
 
 .sinature-wrapper {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
-.share__conteiner {
+.share__container {
   background: url("img/share_left.png") top left no-repeat, url("img/share_right.png") top right no-repeat;
 }
 
-.main-footer__conteiner {
+.main-footer__container {
   min-height: 25vh;
   flex-direction: row;
   justify-content: space-around;
@@ -375,14 +383,17 @@ bottom: -4px;
   .block-content {
     justify-content: center;
   }
-  .features-conteiner,
-  .share__conteiner {
+  .features-container,
+  .share__container {
     background: none;
   }
   .main-footer__nav-list {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .recipes__block-tagline:after {
+    display: none;
   }
 
 
@@ -411,6 +422,12 @@ bottom: -4px;
   .carts-list {
     flex-direction:column;
     gap: 3vh;
+  }
+
+  .social-img-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
 }
